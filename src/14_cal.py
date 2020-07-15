@@ -37,9 +37,11 @@ now = datetime.now()
 year = now.year
 month = now.month
 
-if len(sys.argv) > 1:
-    month = int(sys.argv[1])
-    if len(sys.argv) > 2:
-        year = int(sys.argv[2])
+d = sys.argv
+
+if len(d) > 1:
+    month = int(d[1])
+    if len(d) > 2:
+        year = int(d[2])
 
 print(cal.formatmonth(year, month))
