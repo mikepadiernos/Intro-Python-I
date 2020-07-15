@@ -33,8 +33,9 @@ from datetime import datetime
 
 cal = calendar.TextCalendar(firstweekday=calendar.SUNDAY)
 
-year = datetime.now().year
-month = datetime.now().month
+now = datetime.now()
+year = now.year
+month = now.month
 
 if len(sys.argv) > 1:
     month = int(sys.argv[1])
